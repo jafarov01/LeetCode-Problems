@@ -14,8 +14,8 @@ public:
 
         for (auto it = nums.begin(); it < nums.end(); it++)
         {
-            if (*it >= target) continue;
             auto theOther = find(it + 1, nums.end(), (target - *it));
+
             if (theOther != nums.end() && *theOther + *it == target)
             {
                 result.push_back((it - nums.begin()));
