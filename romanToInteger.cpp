@@ -37,13 +37,13 @@ public:
         {
             int val1 = getValue(s[i]);
             int val2 = 0;
-            if (i != s.length() - 1) val2 = getValue(s[i+1]);
+            if (i != s.length() - 1) val2 = getValue(s[i + 1]);
             if (val1 < val2)
             {
                 result += (val2 - val1);
                 i++;
             }
-            else{
+            else {
                 result += val1;
             }
         }
